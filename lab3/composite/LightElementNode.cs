@@ -62,5 +62,14 @@ namespace Composite
         }
 
         public override string OuterHTML => _currentState.Render(this);
+
+        public override void Accept(ILightVisitor visitor)
+        {
+            visitor.Visit(this); 
+            foreach (var child in Children)
+            {
+                child.Accept(visitor); 
+            }
+        }
     }
 }
