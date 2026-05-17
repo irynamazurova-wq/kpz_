@@ -18,7 +18,6 @@ namespace Composite
             if (!HasNext()) return null;
             LightNode current = _stack.Pop();
 
-            // Якщо поточний вузол є елементом (тегом) з дітьми, штовхаємо дітей у стек у зворотному порядку
             if (current is LightElementNode element)
             {
                 for (int i = element.Children.Count - 1; i >= 0; i--)
