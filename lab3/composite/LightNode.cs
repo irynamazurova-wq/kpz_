@@ -6,6 +6,7 @@ namespace Composite
     {
         public abstract string InnerHTML { get; }
         public abstract string OuterHTML { get; }
+        public abstract void Accept(ILightVisitor visitor);
 
         protected virtual void OnCreated() { }
         protected virtual void OnTextRendered() { }

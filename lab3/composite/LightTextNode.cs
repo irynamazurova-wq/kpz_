@@ -14,6 +14,11 @@ namespace Composite
 
         public override string InnerHTML => _text;
 
+        public override void Accept(ILightVisitor visitor)
+        {
+             visitor.Visit(this);
+        }
+
         public override string OuterHTML
         {
             get

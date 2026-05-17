@@ -9,23 +9,28 @@ namespace Composite
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine("МКР: СТВОРЕННЯ ЕЛЕМЕНТА");
-            LightElementNode div = new LightElementNode("div", "block", "paired");
-            div.ApplyClass("container");
-            div.Children.Add(new LightTextNode("Контент сайту"));
+            Console.WriteLine("МКР: СТВОРЕННЯ HTML СТРУКТУРИ ДЛЯ АНАЛІЗУ");
+            
+            LightElementNode list = new LightElementNode("ul", "block", "paired");
+            LightElementNode item1 = new LightElementNode("li", "block", "paired");
+            item1.Children.Add(new LightTextNode("Головна"));
 
-            Console.WriteLine("\nМКР: РЕНДЕРИНГ У ВИДИМОМУ СТАНІ");
-            Console.WriteLine(div.OuterHTML);
+            LightElementNode item2 = new LightElementNode("li", "block", "paired");
+            item2.Children.Add(new LightTextNode("Про нас"));
 
-            Console.WriteLine("\nМКР: ПЕРЕМИКАННЯ В ПРИХОВАНИЙ СТАН");
-            div.SetState(new HiddenState());
+            LightElementNode image = new LightElementNode("img", "inline", "single");
 
-            Console.WriteLine("\n[Рендеринг після зміни стану]:");
-            Console.WriteLine(div.OuterHTML);
+            list.Children.Add(item1);
+            list.Children.Add(item2);
+            list.Children.Add(image);
 
-            Console.WriteLine("\nМКР: ПОВЕРНЕННЯ У ВИДИМИЙ СТАН ===");
-            div.SetState(new VisibleState());
-            Console.WriteLine(div.OuterHTML);
+            Console.WriteLine("\nМКР: ЗАПУСК ПАТЕРНУ ВІДВІДУВАЧ");
+            
+            HtmlStatsVisitor statsVisitor = new HtmlStatsVisitor();
+
+            list.Accept(statsVisitor);
+
+            statsVisitor.PrintReport();
 
             Console.ReadKey();
         }
