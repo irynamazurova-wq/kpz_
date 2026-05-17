@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Composite
@@ -33,6 +34,31 @@ namespace Composite
             Console.WriteLine(list.InnerHTML);
             Console.WriteLine("\n[Виведення OuterHTML]:");
             Console.WriteLine(list.OuterHTML);
+
+            // === Код МКР
+            Console.WriteLine("\n=== [МКР] Тест шаблону Ітератор ===");
+
+            Console.WriteLine("\n[DFS] Обхід в глибину:");
+            ILightIterator dfs = new DepthFirstIterator(list);
+            while (dfs.HasNext())
+            {
+                LightNode node = dfs.Next();
+                if (node is LightElementNode el)
+                    Console.WriteLine($"Тег: <{el.TagName}>");
+                else if (node is LightTextNode txt)
+                    Console.WriteLine($"   Текст: \"{txt.InnerHTML}\"");
+            }
+
+            Console.WriteLine("\n[BFS] Обхід в ширину:");
+            ILightIterator bfs = new BreadthFirstIterator(list);
+            while (bfs.HasNext())
+            {
+                LightNode node = bfs.Next();
+                if (node is LightElementNode el)
+                    Console.WriteLine($"Тег: <{el.TagName}>");
+                else if (node is LightTextNode txt)
+                    Console.WriteLine($"   Текст: \"{txt.InnerHTML}\"");
+            }
 
             Console.ReadKey();
         }
