@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -18,6 +19,23 @@ namespace Composite
             TagName = tagName;
             DisplayType = displayType;
             ClosureType = closureType;
+            Initialize(); 
+        }
+
+        public void ApplyClass(string className)
+        {
+            CssClasses.Add(className);
+            OnClassListApplied(className); 
+        }
+
+        protected virtual void OnClassListApplied(string className)
+        {
+            Console.WriteLine($"[Хук OnClassListApplied]: До тегу <{TagName}> успішно застосовано клас \"{className}\".");
+        }
+
+        protected override void OnCreated()
+        {
+            Console.WriteLine($"[Хук OnCreated]: Створено новий HTML-тег: <{TagName}>");
         }
 
         public override string InnerHTML
