@@ -12,6 +12,8 @@ namespace Composite
         public List<string> CssClasses { get; set; } = new List<string>();
         public List<LightNode> Children { get; set; } = new List<LightNode>();
 
+        private ILightState _currentState;
+
         public int ChildrenCount => Children.Count;
 
         public LightElementNode(string tagName, string displayType, string closureType)
@@ -19,13 +21,21 @@ namespace Composite
             TagName = tagName;
             DisplayType = displayType;
             ClosureType = closureType;
+            
+            _currentState = new VisibleState();
             Initialize(); 
+        }
+
+        public void SetState(ILightState state)
+        {
+            _currentState = state;
+            Console.WriteLine($"[Система]: Стан тегу <{TagName}> змінено на {state.GetType().Name}.");
         }
 
         public void ApplyClass(string className)
         {
             CssClasses.Add(className);
-            OnClassListApplied(className); 
+            OnClassListApplied(className);
         }
 
         protected virtual void OnClassListApplied(string className)
@@ -51,17 +61,6 @@ namespace Composite
             }
         }
 
-        public override string OuterHTML
-        {
-            get
-            {
-                string classes = CssClasses.Count > 0 ? $" class=\"{string.Join(" ", CssClasses)}\"" : "";
-                if (ClosureType == "single")
-                {
-                    return $"<{TagName}{classes}/>";
-                }
-                return $"<{TagName}{classes}>{InnerHTML}</{TagName}>";
-            }
-        }
+        public override string OuterHTML => _currentState.Render(this);
     }
 }

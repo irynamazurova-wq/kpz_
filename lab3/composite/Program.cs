@@ -9,26 +9,23 @@ namespace Composite
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine("МКР: Створення елемента");
-            LightElementNode button = new LightElementNode("button", "inline", "paired");
+            Console.WriteLine("МКР: СТВОРЕННЯ ЕЛЕМЕНТА");
+            LightElementNode div = new LightElementNode("div", "block", "paired");
+            div.ApplyClass("container");
+            div.Children.Add(new LightTextNode("Контент сайту"));
 
-            CommandInvoker invoker = new CommandInvoker();
+            Console.WriteLine("\nМКР: РЕНДЕРИНГ У ВИДИМОМУ СТАНІ");
+            Console.WriteLine(div.OuterHTML);
 
-            Console.WriteLine("\nМКР: застосування команд");
-            ICommand cmd1 = new AddClassCommand(button, "btn");
-            ICommand cmd2 = new AddClassCommand(button, "btn-success");
+            Console.WriteLine("\nМКР: ПЕРЕМИКАННЯ В ПРИХОВАНИЙ СТАН");
+            div.SetState(new HiddenState());
 
-            invoker.ExecuteCommand(cmd1);
-            invoker.ExecuteCommand(cmd2);
+            Console.WriteLine("\n[Рендеринг після зміни стану]:");
+            Console.WriteLine(div.OuterHTML);
 
-            Console.WriteLine("\n[Поточний стан HTML]:");
-            Console.WriteLine(button.OuterHTML);
-
-            Console.WriteLine("\nМКР: Скасування останньої дії");
-            invoker.UndoLastCommand();
-
-            Console.WriteLine("\n[Стан HTML після скасування]:");
-            Console.WriteLine(button.OuterHTML);
+            Console.WriteLine("\nМКР: ПОВЕРНЕННЯ У ВИДИМИЙ СТАН ===");
+            div.SetState(new VisibleState());
+            Console.WriteLine(div.OuterHTML);
 
             Console.ReadKey();
         }
