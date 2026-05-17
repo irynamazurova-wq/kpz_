@@ -9,28 +9,26 @@ namespace Composite
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine("[МКР] Створення дерева та хуки життєвого циклу");
+            Console.WriteLine("МКР: Створення елемента");
+            LightElementNode button = new LightElementNode("button", "inline", "paired");
 
-            LightElementNode list = new LightElementNode("ul", "block", "paired");
-            list.ApplyClass("menu-list");
+            CommandInvoker invoker = new CommandInvoker();
 
-            LightElementNode item1 = new LightElementNode("li", "block", "paired");
-            item1.ApplyClass("menu-item");
-            item1.Children.Add(new LightTextNode("Головна"));
+            Console.WriteLine("\nМКР: застосування команд");
+            ICommand cmd1 = new AddClassCommand(button, "btn");
+            ICommand cmd2 = new AddClassCommand(button, "btn-success");
 
-            LightElementNode item2 = new LightElementNode("li", "block", "paired");
-            item2.ApplyClass("menu-item");
-            item2.Children.Add(new LightTextNode("Про нас"));
+            invoker.ExecuteCommand(cmd1);
+            invoker.ExecuteCommand(cmd2);
 
-            LightElementNode image = new LightElementNode("img", "inline", "single");
-            image.ApplyClass("logo");
+            Console.WriteLine("\n[Поточний стан HTML]:");
+            Console.WriteLine(button.OuterHTML);
 
-            list.Children.Add(item1);
-            list.Children.Add(item2);
-            list.Children.Add(image);
+            Console.WriteLine("\nМКР: Скасування останньої дії");
+            invoker.UndoLastCommand();
 
-            Console.WriteLine("\n[МКР] Рендеринг HTML сторінки");
-            Console.WriteLine(list.OuterHTML);
+            Console.WriteLine("\n[Стан HTML після скасування]:");
+            Console.WriteLine(button.OuterHTML);
 
             Console.ReadKey();
         }
