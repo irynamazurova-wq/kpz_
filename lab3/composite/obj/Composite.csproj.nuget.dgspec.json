@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\composite\\Composite.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\lab3\\composite\\Composite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\composite\\Composite.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\lab3\\composite\\Composite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\composite\\Composite.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\lab3\\composite\\Composite.csproj",
         "projectName": "Composite",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\composite\\Composite.csproj",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\lab3\\composite\\Composite.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\composite\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Навчання\\2 семестр\\КПЗ\\д\\lab3\\lab3\\composite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
