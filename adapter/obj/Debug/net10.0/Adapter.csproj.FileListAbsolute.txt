@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\bin\Debug\net10.0\Adapter.exe
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\bin\Debug\net10.0\Adapter.deps.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\bin\Debug\net10.0\Adapter.runtimeconfig.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\bin\Debug\net10.0\Adapter.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\bin\Debug\net10.0\Adapter.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\refint\Adapter.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\Adapter.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Adapter\obj\Debug\net10.0\ref\Adapter.dll

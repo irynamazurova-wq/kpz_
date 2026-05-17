@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\bin\Debug\net10.0\Decorator.exe
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\bin\Debug\net10.0\Decorator.deps.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\bin\Debug\net10.0\Decorator.runtimeconfig.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\bin\Debug\net10.0\Decorator.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\bin\Debug\net10.0\Decorator.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\refint\Decorator.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\Decorator.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Decorator\obj\Debug\net10.0\ref\Decorator.dll

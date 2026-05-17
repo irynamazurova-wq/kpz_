@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\bin\Debug\net10.0\Flyweight.exe
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\bin\Debug\net10.0\Flyweight.deps.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\bin\Debug\net10.0\Flyweight.runtimeconfig.json
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\bin\Debug\net10.0\Flyweight.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\bin\Debug\net10.0\Flyweight.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\refint\Flyweight.dll
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.pdb
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\Flyweight.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Навчання\2 семестр\КПЗ\д\lab3\Flyweight\obj\Debug\net10.0\ref\Flyweight.dll
